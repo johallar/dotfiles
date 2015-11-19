@@ -8,6 +8,8 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=2
+set backspace=indent,eol,start
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -36,7 +38,7 @@ call plug#end()
 let airline#extensions#tabline#enabled = 1
 let airline_powerline_fonts = 1
 let airline_detect_modified = 1
-"let g:airline_theme="dark"
+let g:airline_theme="papercolor"
 let airline#extensions#whitespace#enabled=0
 
 " NERDTree Options
