@@ -11,6 +11,8 @@ set expandtab
 set backspace=2
 set backspace=indent,eol,start
 
+set pastetoggle=<F2>
+
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -26,7 +28,6 @@ filetype plugin indent on    " required
 
 call plug#begin()
 Plug 'tpope/vim-fugitive'
-Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'crusoexia/vim-monokai'
