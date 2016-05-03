@@ -10,6 +10,7 @@ set shiftwidth=4
 set expandtab
 set backspace=2
 set backspace=indent,eol,start
+set statusline+=%#warningmsg#
 
 set pastetoggle=<F2>
 
@@ -46,3 +47,15 @@ let airline#extensions#whitespace#enabled=0
 let NERDTreeShowHidden=1
 let NERDTreeChDirMode=2
 let NERDTreeIgnore = ['\.pyc$']
+
+" Syntastic Options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+ 
+execute pathogen#infect()
